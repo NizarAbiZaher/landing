@@ -15,7 +15,7 @@ import { Input } from "@/components/ui/input"
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faRoad, faChalkboardUser } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faRoad, faChalkboardUser, faCircleCheck, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import TypewriterComponent from "typewriter-effect";
 
 // Dynamic Font (Poppins)
@@ -92,12 +92,23 @@ export const Navbar = () => {
             </div>
 
             <div className="relative flex items-center justify-center pt-6">
-                <Input type="email" placeholder="Enter email to begin" className="w-[500px]"/>
+                <Input type="email" placeholder="Enter email to begin" className="w-[500px] animated-border-and-shadow"/>
                 <Button className="bg-transparent hover:bg-transparent text-primary ">
                     
                 </Button>
                 
                 
+            </div>
+
+            <div className="text-center pt-5">
+                <p className="text-gray-600">Learn like a pro.</p>
+            </div>
+
+            <div className="text-center pl-5 pr-5 pt-5">
+                <p className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 text-7xl font-bold">?</p>
+                <h1 className="pb-5 pt-2 text-4xl font-bold">What Will I Learn?</h1>
+                <p>Unlike universities & bootcamps, you will <span className="font-bold">apply </span>your knowledge through, courses, applicable projects, & videos.</p>
+                <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-700 text-6xl font-bold pt-4">↓</p>
             </div>
             
         </div>
