@@ -1,4 +1,5 @@
 import { Title } from "@/components/app-title";
+import { Main } from "@/components/main";
 import { Navbar } from "@/components/navbar";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <div >
       
       <Navbar />
+      <Main />
     </div>
   )
 }

@@ -11,23 +11,19 @@ import {
     TooltipTrigger,
   } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input"
-
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faRoad, faChalkboardUser, faCircleCheck, faArrowDown } from '@fortawesome/free-solid-svg-icons'
-import TypewriterComponent from "typewriter-effect";
-
+import { GanttChartSquare, Laptop } from 'lucide-react';
 // Dynamic Font (Poppins)
 const font = Poppins({
     weight: "500",
     subsets: ["latin"]
 })
 
+// Data
+
 export const Navbar = () => {
     return (
         <div>
-            <div className="w-full z-50 flex justify-between items-center px-2 cursor-pointer pt-3 pb-4 fixed">
+            <div className="w-full z-50 flex justify-between items-center px-2 cursor-pointer pt-3 pb-4">
                 <div className="flex items-center">
                     <Link href='/'>
                         <h1 className={cn(
@@ -42,7 +38,7 @@ export const Navbar = () => {
                         <Tooltip>
                             <TooltipTrigger asChild>
                                 <Link href='/' className="mr-3 hover:opacity-70">
-                                    <FontAwesomeIcon icon={faRoad} />
+                                    <GanttChartSquare />
                                 </Link>
                             </TooltipTrigger>
                     <TooltipContent>
@@ -54,7 +50,7 @@ export const Navbar = () => {
                 <Tooltip>
                     <TooltipTrigger asChild>
                         <Link href='/' className="mr-1 hover:opacity-70">
-                            <FontAwesomeIcon icon={faChalkboardUser} />
+                            <Laptop />
                         </Link>
                     </TooltipTrigger>
                     <TooltipContent>
@@ -81,36 +77,7 @@ export const Navbar = () => {
                     </Link>
                 </Button>
             </div>
-            </div>
-
-            <div className="text-8xl font-extrabold text-center pt-24">
-                <h1 className=""><span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">Learn. </span><span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">Build. </span><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-700">Grow.</span></h1>
-            </div>
-
-            <div className="pl-5 pr-5 text-center font-semibold text-xl pt-5">
-                <p>The ultimate roadmap to <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">learning</span> code, <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">best</span> practices, and modern day <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-700">technologies.</span></p>
-            </div>
-
-            <div className="relative flex items-center justify-center pt-6">
-                <Input type="email" placeholder="Enter email to begin" className="w-[500px] animated-border-and-shadow"/>
-                <Button className="bg-transparent hover:bg-transparent text-primary ">
-                    
-                </Button>
-                
-                
-            </div>
-
-            <div className="text-center pt-5">
-                <p className="text-gray-600">Learn like a pro.</p>
-            </div>
-
-            <div className="text-center pl-5 pr-5 pt-5">
-                <p className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 text-7xl font-bold">?</p>
-                <h1 className="pb-5 pt-2 text-4xl font-bold">What Will I Learn?</h1>
-                <p>Unlike universities & bootcamps, you will <span className="font-bold">apply </span>your knowledge through, courses, applicable projects, & videos.</p>
-                <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-700 text-6xl font-bold pt-4">↓</p>
-            </div>
-            
+            </div>  
         </div>
     )
 }

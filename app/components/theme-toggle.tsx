@@ -24,8 +24,8 @@ export function ModeToggle() {
       className="border-none hover:bg-transparent"
       onClick={toggleTheme}
     >
-      <FontAwesomeIcon icon={faToggleOff} className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-      <FontAwesomeIcon icon={faToggleOn} className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <FontAwesomeIcon icon={faToggleOff} className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 bg-transparent" />
+      <FontAwesomeIcon icon={faToggleOn} className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 bg-transparent" />
       <span className="sr-only">Toggle theme</span>
     </Button>
   );
