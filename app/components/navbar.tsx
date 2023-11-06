@@ -71,7 +71,7 @@ export const Navbar = () => {
                 </Tooltip>
                     </TooltipProvider>
             
-                <Button className="bg-transparent border-2 border-primary text-primary hover:bg-transparent hover:opacity-70">
+                <Button className="bg-transparent border-2 border-primary text-primary hover:bg-transparent videoBorder">
                     <Link href='https://youtube.com/@NizzyABI?si=vME-QfY52s7rHQhH'>
                         Videos
                     </Link>

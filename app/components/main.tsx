@@ -7,6 +7,8 @@ import {TbBrandNextjs} from 'react-icons/tb';
 import {GiComputing, GiRoad} from 'react-icons/gi';
 import IconStrip from "./icon-strip";
 import { Check } from "lucide-react";
+import { DialogCloseButton } from "./alert";
+
 
 
 export const Main = () => {
@@ -106,11 +108,10 @@ export const Main = () => {
                 <IconStrip />
                 <h1 className="font-bold text-5xl pb-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">How is this roadmap different?</h1>
                 <p className="max-w-2xl mx-auto text-center text-lg font-semibold pt-2 pb-6">Unlike the many universities, bootcamps, & roadmaps out there, not only will you learn how to code, but will do so by building applicable projects for job applications, learning how code works behind the scenes, & truly understand how to be a modern day programmer.</p>
-                <div className="flex items-center justify-center border-2 rounded-lg">
-                    <p className="p-0">The SD-Code Roadmap</p>
-                </div>
                 
+                <DialogCloseButton />
             </div>
+            
             
 
             <div className="text-center pl-5 pr-5 pt-5">
