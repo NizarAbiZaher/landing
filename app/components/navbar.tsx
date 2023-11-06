@@ -49,7 +49,7 @@ export const Navbar = () => {
                     <TooltipProvider>
                 <Tooltip>
                     <TooltipTrigger asChild>
-                        <Link href='/' className="mr-1 hover:opacity-70">
+                        <Link href='/coaching' className="mr-1 hover:opacity-70">
                             <Laptop />
                         </Link>
                     </TooltipTrigger>

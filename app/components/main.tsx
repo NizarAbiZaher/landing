@@ -8,6 +8,8 @@ import {GiComputing, GiRoad} from 'react-icons/gi';
 import IconStrip from "./icon-strip";
 import { Check } from "lucide-react";
 import { DialogCloseButton } from "./alert";
+import CalendlyEmbed from "./calendlyform";
+import CalendlyWidget from "./calendlyform";
 
 
 
@@ -91,11 +93,11 @@ export const Main = () => {
                 <h1 className=""><span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">Learn. </span><span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">Build. </span><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-700">Grow.</span></h1>
             </div>
 
-            <div className="pl-5 pr-5 text-center font-semibold text-xl pt-5">
+            <div className="pl-5 pr-5 text-center font-semibold text-xl pt-5 pb-5">
                 <p>The ultimate roadmap to <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">learning</span> code, <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">best</span> practices, and modern day <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-700">technologies.</span></p>
             </div>
 
-            <div className="relative flex items-center justify-center pt-6 pl-7">
+            <div className="relative flex items-center justify-center pt-6 pl-7 pb-5">
                 <Input type="email" placeholder="Enter email to begin" className="w-[500px] animated-border-and-shadow"/>
                 <Button className="bg-transparent hover:bg-transparent text-primary ">
                     
@@ -104,10 +106,10 @@ export const Main = () => {
                 
             </div>
 
-            <div className="text-center pt-5 pl-5 pr-5 lg:pl-24 lg:pr-24">
+            <div className="text-center px-5 py-7 lg:pl-24 lg:pr-24">
                 <IconStrip />
-                <h1 className="font-bold text-5xl pb-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">How is this roadmap different?</h1>
-                <p className="max-w-2xl mx-auto text-center text-lg font-semibold pt-2 pb-6">Unlike the many universities, bootcamps, & roadmaps out there, not only will you learn how to code, but will do so by building applicable projects for job applications, learning how code works behind the scenes, & truly understand how to be a modern day programmer.</p>
+                <h1 className="font-bold text-5xl pb-3 pt-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">How is this roadmap different?</h1>
+                <p className="max-w-2xl mx-auto text-center text-lg font-semibold pt-2 pb-12">Unlike the many universities, bootcamps, & roadmaps out there, not only will you learn how to code, but will do so by building applicable projects for job applications, learning how code works behind the scenes, & truly understand how to be a modern day programmer.</p>
                 
                 <DialogCloseButton />
             </div>
@@ -137,7 +139,7 @@ export const Main = () => {
 
             <div>
                 <p className="text-gray-400">Questions & Answers</p>
-
+                <CalendlyWidget />
             </div>
 
         </div>

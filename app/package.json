@@ -22,6 +22,7 @@
     "next": "14.0.1",
     "next-themes": "^0.2.1",
     "react": "^18",
+    "react-calendly": "^4.3.0",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
     "tailwind-merge": "^2.0.0",
