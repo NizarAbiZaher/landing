@@ -118,4 +118,23 @@
   border-style: solid;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Tailwind variant for the animation */
+@layer components {
+  .animate-scroll-strip {
+    @apply inline-block;
+    animation: scroll 10s linear infinite;
+  }
+}
+
+
 
