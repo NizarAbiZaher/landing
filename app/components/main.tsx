@@ -8,7 +8,9 @@ import { DialogCloseButton } from "@/components/alert";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
-
+import { Separator } from "./ui/separator";
+import { Check } from "lucide-react";
+import CodeIcon from "./code-icons";
 
 
 
@@ -97,35 +99,75 @@ const Main = () => {
                 
             </div>
 
-            <div className="relative flex items-center justify-center pt-6 pl-7 pb-7">
-                <Input type="email" placeholder="Enter email to begin" className="w-[600px] animated-border-and-shadow"/>
-                
-                
-
-
-            </div>
-            <div className="text-center xl:pb-[100px] lg:pb-[90px] md:pb-[80px] sm:pb-[90px] ">
-                <IconStrip />
-                <Link href='#down' className="text-6xl pt-5">
-                    ↓
-                </Link>
-                
-                
+            <div className="relative flex items-center justify-center pt-6 pb-7">
+                <Button className="bg-transparent border-2 border-primary text-primary hover:bg-transparent animated-border-and-shadow hover:opacity-70">
+                    <Link href='https://youtube.com/@NizzyABI?si=vME-QfY52s7rHQhH'>
+                        Get Started
+                    </Link>
+                </Button>
             </div>
 
             
-
-            <div id="down" className="text-center px-5 py-7 lg:pl-24 lg:pr-24">
-                <DialogCloseButton />
-                <h1 className="font-bold text-5xl pb-3 pt-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">How is this roadmap different?</h1>
-                <p className="max-w-2xl mx-auto text-center text-lg font-semibold pt-2 pb-12">Unlike the many universities, bootcamps, & roadmaps out there, not only will you learn how to code, but will do so by building applicable projects for job applications, learning how code works behind the scenes, & truly understand how to be a modern day programmer.</p>
-
+            <div className="text-center xl:pb-[120px] lg:pb-[90px] md:pb-[80px] sm:pb-[90px] ">
                 
+                <IconStrip />
+                <Link href='#down' className="text-6xl ">
+                    <p className="pt-12 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 hover:opacity-70">↓</p>
+                </Link>
             </div>
 
+            <Separator />
 
+            <div id="down" className="text-center px-5 py-7 lg:pl-24 lg:pr-24">
+                
+                <h1 className="font-bold text-5xl pb-3 pt-3 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">How is this roadmap different?</h1>
+                <CodeIcon />
+                <p className="max-w-2xl mx-auto text-center text-lg font-semibold pt-2 pb-12">Unlike college & programming bootcamps, not only will you learn how to code, but will do so by building applicable projects for job applications, learning how code works behind the scenes, & truly understand how to be a modern day programmer.</p>
+            </div>
 
-            <div className="text-center pl-5 pr-5 pt-5">
+            <Separator />
+            <div className="text-center pt-6">
+                <h1 className="text-5xl font-bold pb-5 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">Why Choose SD-Code Roadmap?</h1>
+                <div>
+                
+                <div className="text-center space-y-1">
+                        <Check className="inline-block w-5 h-5" />
+                        <span className="pl-2"><span className="text-blue-500 font-medium">Project</span> based learning</span>
+                </div>
+                <div className="text-center space-y-1">
+                        <Check className="inline-block w-5 h-5" />
+                        <span className="pl-2">Modern day programming<span className="text-blue-500 font-medium"> languages</span></span>
+                </div>
+                <div className="text-center space-y-1">
+                        <Check className="inline-block w-5 h-5" />
+                        <span className="pl-2">Tried & tested<span className=" text-blue-500 font-medium"> study</span> routines</span>
+                </div>
+                <div className="text-center space-y-1">
+                        <Check className="inline-block w-5 h-5" />
+                        <span className="pl-2"><span className="text-blue-500 font-medium">Structured</span> & up-to-date curriculum</span>
+                </div>
+                <div className="text-center space-y-1">
+                        <Check className="inline-block w-5 h-5" />
+                        <span className="pl-2"><span className="text-blue-500 font-medium">Community</span> & mentorship</span>
+                </div>
+                <div className="text-center space-y-1">
+                        <Check className="inline-block w-5 h-5" />
+                        <span className="pl-2">Career prep & <span className="text-blue-500 font-medium">networking</span></span>
+                </div>
+                </div>
+
+                <div className="relative flex items-center justify-center pt-6  pb-7">
+                    <Button className="bg-transparent border-2 border-primary text-primary hover:bg-transparent animated-border-and-shadow hover:opacity-70">
+                        <Link href='https://youtube.com/@NizzyABI?si=vME-QfY52s7rHQhH'>
+                        Get Started
+                        </Link>
+                    </Button>
+                </div>
+            </div>
+
+            <Separator />
+
+            <div className="text-center  pt-5">
                 <div className="flex items-center justify-center text-6xl">
                     <GiRoad />
                 </div>

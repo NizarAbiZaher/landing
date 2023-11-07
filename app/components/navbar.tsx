@@ -23,7 +23,7 @@ const font = Poppins({
 export const Navbar = () => {
     return (
         <div>
-            <div className="hover:opacity:70 text-center pt-4 pb-4 border-b border-white">
+            <div className="hover:opacity:70 text-center pt-4 pb-4 border-b border-gray">
                 <Link href='https://google.com' className="hover:opacity-70">
                     Subscribe for daily videos →
                 </Link>
