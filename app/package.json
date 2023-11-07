@@ -31,6 +31,7 @@
     "zustand": "^4.4.6"
   },
   "devDependencies": {
+    "@grafbase/sdk": "^0.0.25",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

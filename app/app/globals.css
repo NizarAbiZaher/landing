@@ -151,6 +151,24 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes moveRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-strip {
+  animation: moveRight 10s linear infinite;
+  
+}
+
+
+
+
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
