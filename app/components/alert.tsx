@@ -16,7 +16,7 @@ export function DialogCloseButton() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="bg-transparent hover:bg-transparent text-primary shadow">The SD-CODE METHOD</Button>
+        <Button className="bg-transparent hover:bg-transparent text-primary shadow rounded-xl mt-8 mb-8">The SD-CODE METHOD</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>

@@ -11,7 +11,7 @@ import {
     TooltipTrigger,
   } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
-import { GanttChartSquare, Laptop } from 'lucide-react';
+import { ArrowBigRight, GanttChartSquare, Laptop } from 'lucide-react';
 // Dynamic Font (Poppins)
 const font = Poppins({
     weight: "500",
@@ -23,6 +23,11 @@ const font = Poppins({
 export const Navbar = () => {
     return (
         <div>
+            <div className="hover:opacity:70 text-center pt-4 pb-4 border-b border-white">
+                <Link href='https://google.com' className="hover:opacity-70">
+                    Subscribe for daily videos →
+                </Link>
+            </div>
             <div className="w-full z-50 flex justify-between items-center px-2 cursor-pointer pt-3 pb-4">
                 <div className="flex items-center">
                     <Link href='/'>
@@ -73,7 +78,7 @@ export const Navbar = () => {
             
                 <Button className="bg-transparent border-2 border-primary text-primary hover:bg-transparent videoBorder">
                     <Link href='https://youtube.com/@NizzyABI?si=vME-QfY52s7rHQhH'>
-                        Videos
+                        Account
                     </Link>
                 </Button>
             </div>

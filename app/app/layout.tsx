@@ -3,6 +3,9 @@ import { Inter } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
 import './globals.css'
 import { Navbar } from '@/components/navbar'
+import Main from '@/components/main'
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <Navbar />
+        
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
