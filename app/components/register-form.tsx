@@ -3,13 +3,17 @@ import Link from "next/link";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+
 
 export default function RegisterForm() {
 
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-    const [error, setError] = useState("")
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState("");
+
+    const router = useRouter();
 
     // handle submit
     const handleSubmit = async (e:any) => {
@@ -21,6 +25,22 @@ export default function RegisterForm() {
         }
 
         try {
+            // user exists message
+            const resUserExists = await fetch('api/exists', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({email}),
+            });
+            // destructure user
+            const {user} = await resUserExists.json();
+
+            // if user exists, send message saying that user exisits
+            if (user) {
+                setError("User already exists");
+                return;
+            }
         // fetch call to api route
             const res = await fetch('api/register', {
                 method: 'POST',
@@ -37,7 +57,7 @@ export default function RegisterForm() {
             if (res.ok) {
                 const form = e.target;
                 form.reset();
-
+                router.push('/roadmap');
             } else {
                 console.log("Register Failed")
             }
