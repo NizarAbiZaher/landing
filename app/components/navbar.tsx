@@ -47,7 +47,7 @@ export const Navbar = () => {
                                 </Link>
                             </TooltipTrigger>
                     <TooltipContent>
-                            <p>Roadmap!</p>
+                            <p>Roadmap</p>
                     </TooltipContent>
                 </Tooltip>
                     </TooltipProvider>
