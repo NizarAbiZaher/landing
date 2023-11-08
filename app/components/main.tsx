@@ -101,7 +101,7 @@ const Main = () => {
 
             <div className="relative flex items-center justify-center pt-6 pb-7">
                 <Button className="bg-transparent border-2 border-primary text-primary hover:bg-transparent animated-border-and-shadow hover:opacity-70">
-                    <Link href='https://youtube.com/@NizzyABI?si=vME-QfY52s7rHQhH'>
+                    <Link href='/login'>
                         Get Started
                     </Link>
                 </Button>

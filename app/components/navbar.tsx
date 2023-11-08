@@ -12,6 +12,17 @@ import {
   } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
 import { ArrowBigRight, GanttChartSquare, Laptop } from 'lucide-react';
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+  } from "@/components/ui/alert-dialog"
 // Dynamic Font (Poppins)
 const font = Poppins({
     weight: "500",
@@ -75,13 +86,27 @@ export const Navbar = () => {
                     </TooltipContent>
                 </Tooltip>
                     </TooltipProvider>
-            
-                <Button className="bg-transparent border-2 border-primary text-primary hover:bg-transparent videoBorder">
-                    <Link href='https://youtube.com/@NizzyABI?si=vME-QfY52s7rHQhH'>
-                        Account
-                    </Link>
-                </Button>
-            </div>
+
+                    <AlertDialog>
+                        <AlertDialogTrigger asChild>
+                            <Button className="bg-transparent border-2 border-primary text-primary hover:bg-transparent videoBorder">Account</Button></AlertDialogTrigger>
+                        <AlertDialogContent>
+                                <AlertDialogHeader>
+                                    <AlertDialogTitle>Account Info</AlertDialogTitle>
+                                    <AlertDialogDescription>
+                                        Name: Nizar
+                                    </AlertDialogDescription>
+                                    <AlertDialogDescription>
+                                        Email: nizar@gmail.com
+                                    </AlertDialogDescription>
+                                </AlertDialogHeader>
+                                 <AlertDialogFooter>
+                                    <AlertDialogCancel>Go Back</AlertDialogCancel>
+                                <AlertDialogAction className="bg-gradient-to-r from-[#764BA2] to-[#667EEA] text-white border-0 hover:opacity-70">Logout</AlertDialogAction>
+                                </AlertDialogFooter>
+                         </AlertDialogContent>
+                    </AlertDialog>
+                </div>
             </div>  
         </div>
     )
