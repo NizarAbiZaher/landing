@@ -42,12 +42,12 @@ export const Navbar = () => {
                     <TooltipProvider>
                         <Tooltip>
                             <TooltipTrigger asChild>
-                                <Link href='/' className="mr-3 hover:opacity-70">
+                                <Link href='/me' className="mr-3 hover:opacity-70">
                                     <GanttChartSquare />
                                 </Link>
                             </TooltipTrigger>
                     <TooltipContent>
-                        <p>Roadmap</p>
+                            <p>Roadmap!</p>
                     </TooltipContent>
                 </Tooltip>
                     </TooltipProvider>
@@ -66,9 +66,9 @@ export const Navbar = () => {
                     <TooltipProvider>
                 <Tooltip>
                     <TooltipTrigger asChild>
-                        <Link href='/' className="pb-none">
+                        
                             <ModeToggle />
-                        </Link>
+                        
                     </TooltipTrigger>
                     <TooltipContent>
                         <p>Theme</p>
