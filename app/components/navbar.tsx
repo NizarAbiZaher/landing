@@ -1,5 +1,6 @@
 "use client";
 
+import { signOut, useSession } from "next-auth/react";
 import { cn } from "@/lib/utils";
 import { Poppins, Inter } from "next/font/google";
 import Link from "next/link";
@@ -32,6 +33,7 @@ const font = Poppins({
 // Data
 
 export const Navbar = () => {
+    const {data:session} = useSession();
     return (
         <div>
             <div className="hover:opacity:70 text-center pt-4 pb-4 border-b border-gray">
@@ -94,15 +96,15 @@ export const Navbar = () => {
                                 <AlertDialogHeader>
                                     <AlertDialogTitle>Account Info</AlertDialogTitle>
                                     <AlertDialogDescription>
-                                        Name: Nizar
+                                        {session?.user?.name}
                                     </AlertDialogDescription>
                                     <AlertDialogDescription>
-                                        Email: nizar@gmail.com
+                                        {session?.user?.email}
                                     </AlertDialogDescription>
                                 </AlertDialogHeader>
                                  <AlertDialogFooter>
                                     <AlertDialogCancel>Go Back</AlertDialogCancel>
-                                <AlertDialogAction className="bg-gradient-to-r from-[#764BA2] to-[#667EEA] text-white border-0 hover:opacity-70">Logout</AlertDialogAction>
+                                <AlertDialogAction onClick={() => signOut()} className="bg-gradient-to-r from-[#764BA2] to-[#667EEA] text-white border-0 hover:opacity-70">Logout</AlertDialogAction>
                                 </AlertDialogFooter>
                          </AlertDialogContent>
                     </AlertDialog>

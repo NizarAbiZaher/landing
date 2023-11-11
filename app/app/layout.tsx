@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import './globals.css'
 import { Navbar } from '@/components/navbar'
 import Main from '@/components/main'
+import { AuthProvider } from './providers'
 
 
 
@@ -28,7 +29,10 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
         >
-          {children}
+          <AuthProvider>
+            {children}
+          </AuthProvider>
+          
         </ThemeProvider>
       </body>
     </html>
