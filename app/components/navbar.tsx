@@ -36,7 +36,7 @@ const font = Poppins({
 
 
 export const Navbar = () => {
-    const {data:session} = useSession();
+    
     return (
         <div>
             <div className="hover:opacity:70 text-center pt-4 pb-4 border-b border-gray">

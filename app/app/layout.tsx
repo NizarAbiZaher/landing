@@ -29,9 +29,9 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
         >
-          <AuthProvider>
+          
             {children}
-          </AuthProvider>
+          
           
         </ThemeProvider>
       </body>
