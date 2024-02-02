@@ -31,6 +31,9 @@ const font = Poppins({
 })
 
 // Data
+// set
+
+
 
 export const Navbar = () => {
     const {data:session} = useSession();
@@ -96,10 +99,10 @@ export const Navbar = () => {
                                 <AlertDialogHeader>
                                     <AlertDialogTitle>Account Info</AlertDialogTitle>
                                     <AlertDialogDescription>
-                                        {session?.user?.name}
+                                        hey
                                     </AlertDialogDescription>
                                     <AlertDialogDescription>
-                                        {session?.user?.email}
+                                        hi
                                     </AlertDialogDescription>
                                 </AlertDialogHeader>
                                  <AlertDialogFooter>
